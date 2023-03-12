@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid red; */
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(0,255,21,1) 0%, rgba(0,138,255,1) 22%);
+    background: url(./images/1920x1200-px-nature-pokemon-1004643-wallhere.com.jpg) no-repeat fixed center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* font-family: 'Roboto Slab', 'Trebuchet MS', sans-serif; */
+    
+
+
+}
+
+#card-container {
+    width: 500px;
+    height: 600px;
+
+    background-color: transparent;
+    box-shadow: 0 3px 20px rgba(0,0,0, .3);
+    border: 2px solid rgba(82, 82, 82, .3);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 25px;
+
+}
+
+#search-container {
+    width: 400px;
+    height: 100px;
+    
+    display: flex;
+    align-items: flex-start;
+
+    margin-bottom: 30px;
+}
+
+#search-container form {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 30px;
+
+    width: 100%;
+    height: 100%;
+}
+
+#search-container input {
+    width: 350px;
+    height: 45px;
+
+    border: none;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+
+    padding: 15px;
+
+    font-size: 1em;
+}
+
+#search-container button {
+    width: 50px;
+    height: 45px;
+
+    border: none;
+    border-radius: 0 20px 20px 0;
+    outline: none;
+}
+
+#pokemon {
+    width: 400px;
+    height: 90%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pokemon-picture img{
+    width: 180px;
+    margin-top: -65px;
+    margin-bottom: -30px;
+
+    filter: drop-shadow(0 1px 3px rgba(0,0,0,.65));
+}
+
+.pokemon-info {
+    width: 400px;
+    height: 250px;
+    padding: 0 15%;
+
+    background-color: rgba(255, 255, 255, .6);
+
+    border: 2px solid rgba(82, 82, 82, .3);
+    border-radius: 20px;
+    box-shadow: 0 3px 20px rgba(0,0,0, .3);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: .4em;
+
+    font-family: 'Press Start 2P', cursive;
+    font-size: .7em;
+    line-height: 2em;
+    letter-spacing: .02em;
+}
+
+.error {
+    display: none;
+    font-size: 1.2em;
+    color: red;
+    font-family: 'Press Start 2P', cursive;
+}
+
+@media (max-width: 480px) {
+    #card-container {
+        border: none;
+        box-shadow: none;
+    }
+}
+
